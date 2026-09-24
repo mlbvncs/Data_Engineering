@@ -1,15 +1,13 @@
 # Data Engineering
 
-Projects involving ETL pipelines, data modeling, and data warehousing:
-
 ## Data Warehousing & Dimensional Modeling
 
-- [Olist ETL Apache Hop (Group Project)](https://github.com/joaoal1998/etl_olist_apache_hop) — Group data engineering project: Star Schema dimensional model at item-grain, physically implemented in a PostgreSQL Data Warehouse hosted on Supabase; ETL pipeline built with Apache Hop (dimension/fact pipelines and workflows) orchestrated via Docker, feeding a Preset.io dashboard.
-- [JJBike Version 1](https://github.com/mlbvncs/JJBike_V1) — Star Schema dimensional model with CTE-based SCD Type 2 logic in PostgreSQL.
-- [JJBike Version 2](https://github.com/mlbvncs/JJBike_V2) — Star Schema with MERGE-based SCD Type 2 in SQL Server, plus Analysis Services (SSAS) cube deployment.
-- [HotelAndStars](https://github.com/mlbvncs/HotelAndStars) — OLTP-to-OLAP dimensional modeling in SQL Server.
+- [Olist ETL Apache Hop](https://github.com/joaoal1998/etl_olist_apache_hop) — Star Schema in PostgreSQL/Supabase, ETL built with Apache Hop orchestrated via Docker.
+- [JJBike V1](https://github.com/mlbvncs/JJBike_V1) — Star Schema in PostgreSQL, SCD Type 2 via CTEs.
+- [JJBike V2](https://github.com/mlbvncs/JJBike_V2) — Star Schema in SQL Server, SCD Type 2 via MERGE/OUTPUT.
+- [HotelAndStars](https://github.com/mlbvncs/HotelAndStars) — OLTP → OLAP modeling (ER model → Star Schema) in SQL Server.
 
 ## ETL & Relational Data Modeling
 
-- [Olist Brazilian Ecommerce Data Analysis](https://github.com/mlbvncs/Olist_Brazilian_Ecommerce_Data_Analysis) — Python ETL loading raw data into MySQL across 8 related tables (PK/FK modeling), with query results exposed as Views for direct Power BI consumption.
-- [Customer Shopping Behavior Data Analysis](https://github.com/mlbvncs/Customer_Shopping_Behavior_Data_Analysis) — Python ETL notebook (`etl.ipynb`) loading transformed data into MySQL via SQLAlchemy/PyMySQL, structured for downstream analytical queries.
+- [Olist Brazilian Ecommerce](https://github.com/mlbvncs/Olist_Brazilian_Ecommerce_Data_Analysis) — Python ETL loading data into MySQL (8 tables, PK/FK).
+- [Customer Shopping Behavior](https://github.com/mlbvncs/Customer_Shopping_Behavior_Data_Analysis) — Python ETL (pandas/SQLAlchemy) loading raw CSV into MySQL.
